@@ -336,7 +336,15 @@
         
         // --- Firebase Configuration ---
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+    apiKey: "AIzaSyBp6HVGPrYZ6rFgjpYCmyN7CWIZynnKO8s",
+    authDomain: "chronicles-c51c4.firebaseapp.com",
+    projectId: "chronicles-c51c4",
+    storageBucket: "chronicles-c51c4.firebasestorage.app",
+    messagingSenderId: "40867021160",
+    appId: "1:40867021160:web:1ee4b033bfd553778416dd",
+    measurementId: "G-5PRN1E9H3B"
+};
         const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
 
         // --- Global Variables & UI Elements ---
@@ -854,3 +862,4 @@
     </script>
 </body>
 </html>
+
